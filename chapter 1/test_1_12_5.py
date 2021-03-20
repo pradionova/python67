@@ -47,4 +47,3 @@ elif a > b and a > c and b == c:
     print(c)
 else:
     print('End')
-    
