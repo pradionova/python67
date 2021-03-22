@@ -1,6 +1,17 @@
 a = input()
 list0 = a.split()
-sort0 = list0.sort()
-len0 = len(a)
+list0.sort()
+len0 = len(list0)
+letter = ''
+result = ''
+some = ''
+colvo = 0
 for i in range(0, len0):
-    print('he')
+    if letter == list0[i]:
+        colvo += 1
+        if colvo == 2:
+            result += letter + ' '
+    else:
+        letter = list0[i]
+        colvo = 1
+print(result)
