@@ -1,7 +1,13 @@
 lst = input()
 x = input()
-spitLst = lst.split()
-lenLst = len(lst)
+result = ''
+splitLst = lst.split()
+lenLst = len(splitLst)
 for i in range(lenLst):
-    if i == x:
-        print(i)
+    indexSplit = splitLst[i]
+    if indexSplit == x:
+        result += str(i)
+        result += ' '
+if result == '':
+    result = 'Отсутствует'
+print(result)
