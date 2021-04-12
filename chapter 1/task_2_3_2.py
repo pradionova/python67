@@ -1,10 +1,11 @@
 def modify_list(l):
-    newList = []
-    for i in range(lst):
-        if i % 2 == 0:
-            newList.append(i)
-            return newList
+    for i in range(len(l) -1, -1, -1):
+        if l[i] % 2 != 0:
+            l.remove(l[i])
+    for j in range(len(l)):
+        if l[j] % 2 == 0:
+            l[j] = int(l[j] / 2)
 
-
-lst = [1, 2, 3, 4, 5, 6]
-print(modify_list(lst))
+lst = [1, 3, 5, 7]
+modify_list(lst)
+print(lst)
