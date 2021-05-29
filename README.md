@@ -1,1 +1,1 @@
-# python67
+https://stepik.org/course/67/syllabus
